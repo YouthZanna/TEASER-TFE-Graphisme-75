@@ -1,0 +1,148 @@
+.launchpad {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(8, auto);
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: black;
+  opacity: 0.3;
+  border-radius: 10%;
+  animation: colorFlash 1s infinite;
+  flex-direction: column;
+}
+
+.button {
+  font-size: 100px;
+  line-height: 1;
+  text-align: center;
+}
+
+.active {
+  opacity: 1;
+}
+
+@keyframes colorFlash {
+  0% { background-color: red; }
+  25% { background-color: green; }
+  50% { background-color: blue; }
+  75% { background-color: yellow; }
+  100% { background-color: purple; }
+}
+
+@font-face {
+  font-family: "BZZ";
+  src: url(font/BZZ-Regular.otf) format('opentype')
+  font-family: "BIP";
+  src: url(font/BIP-Regular.otf) format('opentype')
+  font-family: "BOUM";
+  src: url(font/BOUM-Regular.otf) format('opentype')
+  font-family: "CLING";
+  src: url(font/CLING-Regular.otf) format('opentype')
+  font-family: "CRR";
+  src: url(font/CRR-Regular.otf) format('opentype')
+  font-family: "DING";
+  src: url(font/DING-Regular.otf) format('opentype')
+  font-family: "TSH";
+  src: url(font/TSH-Regular.otf) format('opentype')
+  font-family: "CHTONG";
+  src: url(font/CHTONG-Regular.otf) format('opentype');
+}
+
+.custom-typography:nth-of-type(1){
+  font-family: "BZZ";
+}
+.custom-typography:nth-of-type(2){
+  font-family: "BIP";
+  }
+.custom-typography:nth-of-type(3){
+  font-family: "BOUM";
+}
+.custom-typography:nth-of-type(4){
+  font-family: "CLING";
+}
+.custom-typography:nth-of-type(5){
+  font-family: "CRR";
+}
+.custom-typography:nth-of-type(6){
+  font-family: "DING";
+}
+.custom-typography:nth-of-type(7){
+  font-family: "TSH";
+}
+.custom-typography:nth-of-type(8){
+    font-family: "CHTONG";
+}
+
+span{
+  font-family: "BZZ";
+}
+span:first-line {
+  font-family: "BZZ"
+  font-size: 20px;
+}
+span.second-line {
+  font-family: "BIP";
+}
+span.third-line {
+  font-family: "BOUM"
+}
+span.fourth-line {
+  font-family: "CLING";
+}
+span.fifth-line {
+  font-family: "CRR"
+}
+span.sixth-line {
+  font-family: "DING";
+}
+span.seventh-line {
+  font-family: "TSH"
+}
+span.eighth-line {
+  font-family: "CHTONG";
+}
+
+h2:nth-of-type(1){
+  font-family: "BZZ";
+}
+h2:nth-of-type(2){
+  span{
+    font-family: "BIP";
+    }
+h2:nth-of-type(3){
+  span{
+    font-family: "BOUM";
+  }
+h2:nth-of-type(4){
+  span{
+    font-family: "CLING";
+ }
+h2:nth-of-type(5){
+  span{
+    font-family: "CRR";
+ }
+h2:nth-of-type(6){
+  span{
+  font-family: "DING";
+ }
+h2:nth-of-type(7){
+  span{
+    font-family: "TSH";
+ }
+h2:nth-of-type(8){
+  span{
+    font-family: "CHTONG";
+ }
